@@ -16,7 +16,7 @@ class PieChart extends React.Component {
   };
   
   static defaultProps = {
-    colors: ['#042a2b', '#5eb1bf', '#ef7b45', '#d84727'],
+    colors: ['#3299CC', '#236B8E', '#4E78A0', '#0276FD'],
     size: 200,
     lineWidth: 25
   };
