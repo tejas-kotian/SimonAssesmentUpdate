@@ -3,8 +3,9 @@ import PropTypes from "prop-types";
 import LogoComponent from "../assestdashboard/LogoComponent";
 
 const DashboardItem = ({ assestsEntered, handleSubmit, allocation }) => (
-  <div className="small w-100">
-   
+  
+  <div className="card small">
+   <div className="card-body" style={{"width":"100%"}}>
    
     {allocation > 0 ?
       assestsEntered.map(assests => {
@@ -33,6 +34,7 @@ const DashboardItem = ({ assestsEntered, handleSubmit, allocation }) => (
         </button>
       )}
     </>
+    </div>
   </div>
 );
 

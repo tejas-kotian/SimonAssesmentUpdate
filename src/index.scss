@@ -12,11 +12,10 @@ $colors-list:#505974 #236B8E #4E78A0 #0276FD;
 @each $current-color in $colors-list {
     $i: index($colors-list, $current-color);
     .stuff-#{$i} { 
-        
         border-left: solid 6px;
         border-width:5px;
         border-color:$current-color;
-        width:80%;
+        width:100%;
         height: 20px;
     }
 }

@@ -1,7 +1,7 @@
 const assests = [
   {
     id: 1,
-    name: "S&P 500",
+    name: "S&P 500 ®",
     options: [{ years: 1, value: "6.10" }]
   },
   {
