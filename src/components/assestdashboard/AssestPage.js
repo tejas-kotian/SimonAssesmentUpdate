@@ -63,12 +63,16 @@ class AssestPage extends React.Component {
   handleConfirm = () => {
     if (this.props.allocation === 100) {
       toast.success("Confirming the data successfully");
+    } else {
+      toast.info("Allocation should be complete 100 % to submit the strategy plan");
     }
   };
 
   handleSubmit = () => {
     if (this.props.allocation === 100) {
     toast.success("Submit the data successfully");
+    }else  {
+      toast.info("Allocation should be complete 100 % to submit the strategy plan");
     }
   };
 

@@ -12,13 +12,15 @@ class PieChart extends React.Component {
     colors: PropTypes.array,
     data: PropTypes.array.isRequired,
     size: PropTypes.number,
-    lineWidth: PropTypes.number
+    lineWidth: PropTypes.number,
+    width:PropTypes.number
   };
   
   static defaultProps = {
-    colors: ['#3299CC', '#236B8E', '#4E78A0', '#0276FD'],
-    size: 200,
-    lineWidth: 25
+    colors: ['#505974', '#366ba3', '#4E78A0', '#0276FD'],
+    size: 130,
+    width:180,
+    lineWidth: 20
   };
   
   componentDidMount() {
@@ -62,7 +64,7 @@ class PieChart extends React.Component {
     return (
       <canvas
         height={this.props.size}
-        width={this.props.size}
+        width={this.props.width}
       />
     );
   }

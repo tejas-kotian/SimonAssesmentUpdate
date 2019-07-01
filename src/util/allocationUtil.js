@@ -17,7 +17,6 @@ export const filterItems = (arr) => {
 }
 
 export const filterItemsPie =(assestsEntered) => {
-  debugger;
       let _arr = new Array();
       
       for(let a of assestsEntered) {

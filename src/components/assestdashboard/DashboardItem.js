@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 import LogoComponent from "../assestdashboard/LogoComponent";
 
 const DashboardItem = ({ assestsEntered, handleSubmit, allocation }) => (
-  <div className="small">
+  <div className="small w-100">
    
    
     {allocation > 0 ?
@@ -11,7 +11,7 @@ const DashboardItem = ({ assestsEntered, handleSubmit, allocation }) => (
         return (
           <div
             key={assests.id}
-            className="itemBorder mt-3 h-3 d-flex justify-content-between mb-3 text-center bg-white d-flex p-2"
+            className={"mt-3 justify-content-between mb-3 text-center bg-white stuff-" + assests.id}
           >
             <span className="text-center flex-wrap">{assests.name}</span>
             <span className="text-center">{assests.val}%</span>

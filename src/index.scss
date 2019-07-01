@@ -7,10 +7,20 @@
 $base-color: #F5F5F5;
 $header-color:#304e7a;
 $color-white:white;
+$colors-list:#505974 #236B8E #4E78A0 #0276FD;
 
-@mixin random-bgr(){
-  border-color: rgb(random(255), random(255), random(255));
+@each $current-color in $colors-list {
+    $i: index($colors-list, $current-color);
+    .stuff-#{$i} { 
+        
+        border-left: solid 6px;
+        border-width:5px;
+        border-color:$current-color;
+        width:80%;
+        height: 20px;
+    }
 }
+
 
 .content-color{
   background-color: $base-color;
@@ -24,21 +34,6 @@ $color-white:white;
 .headerfontcolor{
   color:$color-white;
 }
-.itemBorder{
-  $num-colors: 100;
-  $base-color: #996B4D;
-  $spectrum: 360deg;
-  $offset:50deg;
-  @for $i from 0 to $num-colors {
-    &:nth-child(#{$i}) {
-      @include random-bgr();
-    }
-  }
-  border-left: solid 6px;
-
-  border-width:5px;
-}
-
 .btn {
   margin-left: 10px;
   margin-right: 10px;
