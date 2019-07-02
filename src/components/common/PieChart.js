@@ -36,6 +36,8 @@ class PieChart extends React.Component {
     // eslint-disable-next-line react/no-find-dom-node
     const canvas = ReactDOM.findDOMNode(this);
     const c = canvas.getContext('2d');
+    c.fillStyle = "white";
+     c.fillRect(0, 0, canvas.width, canvas.height);
     const center = this.props.size / 2;
     const lineWidth = this.props.lineWidth;
     const radius = center - (lineWidth / 2);

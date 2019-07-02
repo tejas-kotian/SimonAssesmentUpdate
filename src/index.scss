@@ -7,7 +7,10 @@
 $base-color: #F5F5F5;
 $header-color:#304e7a;
 $color-white:white;
+$color-grey:grey;
 $colors-list:#505974 #236B8E #4E78A0 #0276FD;
+$color-textbox-font:#3498db;
+$fixed-width-276:276px;
 
 @each $current-color in $colors-list {
     $i: index($colors-list, $current-color);
@@ -20,12 +23,20 @@ $colors-list:#505974 #236B8E #4E78A0 #0276FD;
     }
 }
 
-
+.percentage-font-color{
+color:$color-textbox-font;
+}
+.fontGreyColor{
+   color:$color-grey;
+}
 .content-color{
   background-color: $base-color;
 }
 .whiteBackground{
   background-color: $color-white;
+}
+.fixed-width-276{
+   width:$fixed-width-276;
 }
 .headerBackground{
   background-color:$header-color;
@@ -60,8 +71,8 @@ $colors-list:#505974 #236B8E #4E78A0 #0276FD;
 
 input[type=text] {
   width: 30%;
-  border: solid #3498db;
-  color:#3498db;
+  border: solid $color-textbox-font;
+  color:$color-textbox-font;
   &::-webkit-inner-spin-button, &::-webkit-outer-spin-button {
     -webkit-appearance: none;
     -moz-appearance: none;

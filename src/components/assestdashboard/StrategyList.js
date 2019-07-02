@@ -17,8 +17,8 @@ const StrategyList = ({ strategies, onPercentEnter}) => {
         return (
           <tr key={strategy.id}>
             <td>{strategy.name}</td>
-            <td><span className="font-weight-bold">{strategy.options[0].value}% Cap</span></td>
-            <td style={{borderLeft:"0px"}}><span className="percentInput"><  input type="text" name={strategy.name} id={strategy.id}  value={strategy.val || 0}  onChange={onPercentEnter} ></input><span>%</span></span></td>
+            <td><span className="font-weight-bold">{strategy.options[0].value}% <span className="fontGreyColor">Cap</span></span></td>
+            <td><span className="percentInput"><  input type="text" name={strategy.name} id={strategy.id}  value={strategy.val || 0}  onChange={onPercentEnter} ></input><span>%</span></span></td>
           </tr>
         );
       })}
