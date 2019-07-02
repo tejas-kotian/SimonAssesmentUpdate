@@ -8,8 +8,8 @@ const StrategyList = ({ strategies, onPercentEnter}) => {
   <table className="table table-bordered mt-3 small">
     <thead className="content-color">
       <tr>
-        <td className="font-weight-bold">Index Crediting Strategies</td>
-        <td colSpan={2} className="font-weight-bold">1 Year P2P</td>
+        <td className="font-weight-bold text-center">Index Crediting Strategies</td>
+        <td colSpan={2} className="font-weight-bold text-center">1 Year P2P</td>
       </tr>
     </thead>
     <tbody>

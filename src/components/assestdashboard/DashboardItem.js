@@ -12,10 +12,10 @@ const DashboardItem = ({ assestsEntered, handleSubmit, allocation }) => (
         return (
           <div
             key={assests.id}
-            className={"mt-3 justify-content-between mb-3 text-center bg-white stuff-" + assests.id}
+            className={"d-flex mt-3 mb-3 bg-white stuff-" + assests.id}
           >
-            <span className="text-center flex-wrap">{assests.name}</span>
-            <span className="text-center" style={{"color":"#3498db"}}>{assests.val}%</span>
+            <span className="ml-1 text-left">{assests.name}</span>
+            <span className="ml-auto" style={{"color":"#3498db"}}>{assests.val}%</span>
           </div>
         );
       }) : <LogoComponent></LogoComponent>
