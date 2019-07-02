@@ -14,7 +14,7 @@ const TotalAllocation = ({ allocation, onConfirm, onReset }) => (
     <div className="col-md-2" />
     <div className="col-md-6 ml-auto p-2">
       <button type="button" className={"m-3 btn btn-default pull-right text-center " + (allocation ===100?'':'disabled') }onClick={onConfirm}>Confirm</button>
-      <a className="m-3 anchor pull-right text-center" onClick={onReset}>Reset</a>
+      <a className="m-3 anchor pull-right text-center" href="#" onClick={onReset}>Reset</a>
     </div>
   </div>
   </div>

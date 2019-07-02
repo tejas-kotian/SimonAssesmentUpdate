@@ -94,7 +94,7 @@ class AssestPage extends React.Component {
                       <Dashboard pieItems={this.props.pieItems}></Dashboard>
                   
                 </div>
-                <div className="row ml-2" style={{"width":"96%"}}>
+                <div className="row ml-2" style={{"width":"276px"}}>
                   <DashboardItem
                     assestsEntered={this.props.assestsEntered}
                     handleSubmit={this.handleSubmit}

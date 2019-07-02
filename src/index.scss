@@ -61,6 +61,7 @@ $colors-list:#505974 #236B8E #4E78A0 #0276FD;
 input[type=text] {
   width: 30%;
   border: solid #3498db;
+  color:#3498db;
   &::-webkit-inner-spin-button, &::-webkit-outer-spin-button {
     -webkit-appearance: none;
     -moz-appearance: none;

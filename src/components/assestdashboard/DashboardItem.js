@@ -5,7 +5,7 @@ import LogoComponent from "../assestdashboard/LogoComponent";
 const DashboardItem = ({ assestsEntered, handleSubmit, allocation }) => (
   
   <div className="card small">
-   <div className="card-body" style={{"width":"100%"}}>
+   <div className="card-body" style={{"width":"276px"}}>
    
     {allocation > 0 ?
       assestsEntered.map(assests => {
@@ -15,7 +15,7 @@ const DashboardItem = ({ assestsEntered, handleSubmit, allocation }) => (
             className={"mt-3 justify-content-between mb-3 text-center bg-white stuff-" + assests.id}
           >
             <span className="text-center flex-wrap">{assests.name}</span>
-            <span className="text-center">{assests.val}%</span>
+            <span className="text-center" style={{"color":"#3498db"}}>{assests.val}%</span>
           </div>
         );
       }) : <LogoComponent></LogoComponent>
