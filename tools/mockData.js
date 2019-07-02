@@ -12,7 +12,7 @@ const assests = [
   {
     id: 3,
     name: "Dow Jones U.S. Real Estate Index",
-    options: [{ years: 1, value: "6.5" }]
+    options: [{ years: 1, value: "6.50" }]
   },
   {
     id: 4,

@@ -11,6 +11,7 @@ $color-grey:grey;
 $colors-list:#505974 #236B8E #4E78A0 #0276FD;
 $color-textbox-font:#3498db;
 $fixed-width-276:276px;
+$fixed-width-275:274px;
 
 @each $current-color in $colors-list {
     $i: index($colors-list, $current-color);
@@ -37,6 +38,9 @@ color:$color-textbox-font;
 }
 .fixed-width-276{
    width:$fixed-width-276;
+}
+.fixed-width-275{
+  width:$fixed-width-275;
 }
 .headerBackground{
   background-color:$header-color;
